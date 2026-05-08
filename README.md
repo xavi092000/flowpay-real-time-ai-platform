@@ -104,7 +104,6 @@ FlowPay includes a full validation and reliability framework:
 - Global evidence generation
 
 ---
-
 ## Validation Results
 
 | Validation Area | Result |
@@ -118,6 +117,8 @@ FlowPay includes a full validation and reliability framework:
 | Global Validation Pass Rate | 100% |
 
 ---
+
+
 
 ## Performance Metrics
 
