@@ -275,8 +275,6 @@ Run streaming replay validation:
 python flowpay_30s_event_replay_validation.py
 ```
 
----
-
 Author
 
 Felix Brillant
