@@ -53,6 +53,37 @@ The platform combines streaming ingestion, quantitative modeling, cloud orchestr
 
 [View Full Architecture Diagram](architecture/flowpay_architecture.md)
 
+```mermaid
+flowchart TD
+    A[Market Events] --> B[AWS Kinesis Data Streams]
+    B --> C[AWS Lambda / Kinesis Consumer]
+    C --> D[Data Quality Layer]
+    D --> E[Quantitative Risk Engine<br/>Market Risk Score]
+    E --> F[AWS Step Functions<br/>Multi-Agent Orchestration]
+
+    F --> G1[Signal Triage Agent]
+    F --> G2[Market Analysis Agent]
+    F --> G3[Governance Validation Agent]
+    F --> G4[Observability Agent]
+
+    G1 --> H[RAG Explanation Layer]
+    G2 --> H
+    G3 --> H
+    G4 --> H
+
+    H --> I[Qdrant Vector Database]
+    H --> J[Decision Intelligence Report]
+
+    J --> K[Amazon S3 Evidence Storage]
+    K --> L[AWS Glue Catalog]
+    L --> M[Amazon Athena]
+    M --> N[dbt Analytics Models]
+    N --> O[Power BI Dashboard]
+
+    F --> P[Amazon CloudWatch Metrics]
+    P --> Q[SLO / Latency / Failure Monitoring]
+```
+
 ```text
 Market Events
     ↓
