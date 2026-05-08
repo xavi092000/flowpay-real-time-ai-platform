@@ -89,24 +89,21 @@ CloudWatch Metrics + Validation Evidence
 
 ---
 
+## Production-Grade Validation
+
 FlowPay includes a full validation and reliability framework:
 
-Adversarial replay testing
-Data quality validation
-Failure handling validation
-Latency & SLO validation
-Event replay systems
-Quantitative calibration
-RAG evaluation
-Streaming validation
-Global evidence generation
-Performance Metrics
-Metric	Result
-Average Latency	~1.6s
-P95 Latency	~2.1s
-SLO Target (<5s)	PASSED
-Validation Pass Rate	100%
-Infrastructure Failures	0
+- Adversarial replay testing
+- Data quality validation
+- Failure handling validation
+- Latency & SLO validation
+- Event replay systems
+- Quantitative calibration
+- RAG evaluation
+- Streaming validation
+- Global evidence generation
+
+---
 
 ## Validation Results
 
