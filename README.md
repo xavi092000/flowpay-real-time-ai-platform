@@ -49,6 +49,23 @@ The platform combines streaming ingestion, quantitative modeling, cloud orchestr
 
 ---
 
+## Tech Stack
+
+| Category | Technologies |
+|---|---|
+| Cloud | AWS |
+| Streaming | Amazon Kinesis |
+| Compute | AWS Lambda |
+| Orchestration | AWS Step Functions |
+| Storage | Amazon S3 |
+| Analytics | Amazon Athena, dbt |
+| Infrastructure as Code | Terraform |
+| AI / RAG | Qdrant, Retrieval-Augmented Generation (RAG) |
+| Monitoring | Amazon CloudWatch |
+| Language | Python |
+| Validation | Adversarial Replay Testing, SLO Validation |
+| Dashboarding | Power BI |
+
 ## High-Level Architecture
 
 [View Full Architecture Diagram](architecture/flowpay_architecture.md)
