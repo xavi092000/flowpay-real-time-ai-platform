@@ -166,6 +166,35 @@ FlowPay includes a dbt analytics layer with:
 - lineage-ready transformations
 
 ---
+## Technical Skills Demonstrated
+
+- AWS Cloud Architecture
+- Real-Time Streaming Systems
+- Multi-Agent AI Systems
+- Retrieval-Augmented Generation (RAG)
+- Infrastructure as Code (Terraform)
+- dbt Analytics Engineering
+- Cloud Observability
+- Validation Engineering
+- Reliability Engineering
+- Python Data Engineering
+
+---
+
+## Production Reliability Signals
+
+- P95 latency tracking
+- SLO validation under 5 seconds
+- Adversarial replay testing
+- Failure handling validation
+- Replay-based validation workflows
+- CloudWatch observability
+- Evidence generation pipeline
+- Infrastructure reproducibility with Terraform
+- dbt-based analytics validation
+
+---
+
 
 ## Why This Project Matters
 
@@ -180,6 +209,18 @@ FlowPay demonstrates the intersection of:
 - Decision Intelligence Systems
 
 ---
+
+## How to Run / Reproduce
+
+This repository is designed as a portfolio-grade reference implementation.  
+Some AWS resources may require account-specific configuration before execution.
+
+### Local Setup
+
+```bash
+python -m venv .venv
+.venv\Scripts\activate
+pip install -r requirements.txt
 
 ## Evidence & Validation
 
@@ -207,3 +248,8 @@ flowpay-real-time-ai-platform/
 ├── flowpay_observability.py
 │
 └── README.md
+
+Author
+
+Felix Brillant
+AI / Cloud Data Engineering
