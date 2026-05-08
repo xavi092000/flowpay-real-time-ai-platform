@@ -248,7 +248,7 @@ flowpay-real-time-ai-platform/
 ├── flowpay_observability.py
 │
 └── README.md
-
+```
 ## Local Execution
 
 Run the complete FlowPay demonstration:
@@ -274,6 +274,8 @@ Run streaming replay validation:
 ```bash
 python flowpay_30s_event_replay_validation.py
 ```
+
+---
 
 Author
 
