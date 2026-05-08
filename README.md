@@ -20,6 +20,20 @@ The platform combines streaming ingestion, quantitative modeling, cloud orchestr
 
 ---
 
+
+## Key Production Features
+
+- Real-time streaming ingestion using Amazon Kinesis
+- Multi-agent orchestration with AWS Step Functions
+- Quantitative Market Risk Score (MRS) engine
+- Retrieval-Augmented Generation (RAG) explanation layer
+- Adversarial validation and replay testing
+- Reliability-focused architecture with observability
+- Infrastructure as Code using Terraform
+- Analytics engineering with dbt
+- CloudWatch metrics and SLO monitoring
+- Production-style evidence generation pipeline
+
 ## Core Engineering Domains
 
 - Real-time streaming systems
