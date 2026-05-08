@@ -1,0 +1,44 @@
+{
+  "summary": {
+    "validation_type": "rag_evaluation_layer",
+    "total_tests": 3,
+    "passed_tests": 3,
+    "failed_tests": 0,
+    "pass_rate": 1.0,
+    "minimum_retrieval_confidence": 0.5,
+    "slo_latency_seconds": 20.0,
+    "verdict": "PASS"
+  },
+  "results": [
+    {
+      "scenario": "normal_market_explanation",
+      "severity": "Normal",
+      "mrs": 0.16,
+      "action": "monitor_only",
+      "retrieval_confidence": 1.0,
+      "latency_seconds": 11.0359,
+      "errors": [],
+      "test_passed": true
+    },
+    {
+      "scenario": "defensive_liquidity_explanation",
+      "severity": "Defensive",
+      "mrs": 70,
+      "action": "liquidity_rebalancing",
+      "retrieval_confidence": 1.0,
+      "latency_seconds": 8.8296,
+      "errors": [],
+      "test_passed": true
+    },
+    {
+      "scenario": "critical_flash_crash_explanation",
+      "severity": "Critical",
+      "mrs": 95.0,
+      "action": "liquidity_rebalancing",
+      "retrieval_confidence": 1.0,
+      "latency_seconds": 8.3297,
+      "errors": [],
+      "test_passed": true
+    }
+  ]
+}

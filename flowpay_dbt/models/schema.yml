@@ -1,0 +1,46 @@
+version: 2
+
+models:
+  - name: gold_decisions
+    description: "Clean decision outputs for analytics"
+    columns:
+      - name: run_id
+        tests:
+          - not_null
+
+      - name: mrs
+        tests:
+          - not_null
+
+      - name: severity
+        tests:
+          - not_null
+          - accepted_values:
+              values: ["Normal", "Guarded", "Defensive", "Critical"]
+
+      - name: action_bundle
+        tests:
+          - not_null
+          - accepted_values:
+              values:
+                [
+                  "monitoring_bundle",
+                  "early_warning_bundle",
+                  "defensive_bundle",
+                  "critical_protection_bundle",
+                ]
+
+  - name: gold_decision_metrics
+    description: "Aggregated decision quality metrics"
+    columns:
+      - name: run_id
+        tests:
+          - not_null
+
+      - name: avg_mrs
+        tests:
+          - not_null
+
+      - name: mrs_trend
+        tests:
+          - not_null

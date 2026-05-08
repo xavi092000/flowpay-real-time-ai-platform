@@ -1,0 +1,40 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environments
+.venv/
+.venv_dbt/
+venv/
+env/
+
+# Secrets
+.env
+*.pem
+*.key
+credentials.json
+token.json
+
+# Logs and generated outputs
+logs/
+outputs/
+*.log
+
+# Terraform
+.terraform/
+*.tfstate
+*.tfstate.*
+crash.log
+
+# dbt
+flowpay_dbt/target/
+flowpay_dbt/logs/
+flowpay_dbt/dbt_packages/
+
+# OS / IDE
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

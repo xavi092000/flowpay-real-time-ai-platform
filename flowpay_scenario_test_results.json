@@ -1,0 +1,52 @@
+[
+  {
+    "scenario": "normal_market",
+    "expected_severity": "Normal",
+    "actual_severity": "Normal",
+    "mrs": 0.1,
+    "action_bundle": "monitoring_bundle",
+    "human_review_required": false,
+    "execution_status": "SUCCEEDED",
+    "passed": true
+  },
+  {
+    "scenario": "guarded_sell_pressure",
+    "expected_severity": "Guarded",
+    "actual_severity": "Guarded",
+    "mrs": 44.05,
+    "action_bundle": "early_warning_bundle",
+    "human_review_required": false,
+    "execution_status": "SUCCEEDED",
+    "passed": true
+  },
+  {
+    "scenario": "defensive_market",
+    "expected_severity": "Defensive",
+    "actual_severity": "Defensive",
+    "mrs": 57.0,
+    "action_bundle": "defensive_bundle",
+    "human_review_required": true,
+    "execution_status": "SUCCEEDED",
+    "passed": true
+  },
+  {
+    "scenario": "critical_market",
+    "expected_severity": "Critical",
+    "actual_severity": "Critical",
+    "mrs": 79.53,
+    "action_bundle": "critical_protection_bundle",
+    "human_review_required": true,
+    "execution_status": "SUCCEEDED",
+    "passed": true
+  },
+  {
+    "scenario": "recovery_market",
+    "expected_severity": "Normal",
+    "actual_severity": "Normal",
+    "mrs": 0.44,
+    "action_bundle": "monitoring_bundle",
+    "human_review_required": false,
+    "execution_status": "SUCCEEDED",
+    "passed": true
+  }
+]

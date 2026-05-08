@@ -1,0 +1,368 @@
+{
+  "summary": {
+    "validation_type": "extended adversarial event replay",
+    "total_tests": 13,
+    "passed_tests": 13,
+    "warning_tests": 0,
+    "failed_tests": 0,
+    "pass_rate": 1.0,
+    "non_fail_rate": 1.0,
+    "average_latency_seconds": 0.0,
+    "slo_latency_seconds": 5.0,
+    "verdict": "PASS"
+  },
+  "results": [
+    {
+      "scenario": "valid_normal_control",
+      "status": "PASS",
+      "expected_valid_schema": true,
+      "actual_valid_schema": true,
+      "expected_model_runs": true,
+      "actual_model_ran": true,
+      "schema_errors": [],
+      "decision": {
+        "mrs": 0.25,
+        "severity": "Normal",
+        "action_bundle": "monitor_only"
+      },
+      "decision_valid": true,
+      "decision_errors": [],
+      "behavioral_valid": true,
+      "behavioral_errors": [],
+      "stability": {
+        "runs": 5,
+        "severities": [
+          "Normal",
+          "Normal",
+          "Normal",
+          "Normal",
+          "Normal"
+        ],
+        "severity_stable": true,
+        "mrs_range": 0.0
+      },
+      "latency_seconds": 0.0001,
+      "latency_passed": true,
+      "test_passed": true,
+      "failure_type": "NONE",
+      "warnings": []
+    },
+    {
+      "scenario": "flash_crash_valid",
+      "status": "PASS",
+      "expected_valid_schema": true,
+      "actual_valid_schema": true,
+      "expected_model_runs": true,
+      "actual_model_ran": true,
+      "schema_errors": [],
+      "decision": {
+        "mrs": 95.0,
+        "severity": "Critical",
+        "action_bundle": "liquidity_rebalancing"
+      },
+      "decision_valid": true,
+      "decision_errors": [],
+      "behavioral_valid": true,
+      "behavioral_errors": [],
+      "stability": {
+        "runs": 5,
+        "severities": [
+          "Critical",
+          "Critical",
+          "Critical",
+          "Critical",
+          "Critical"
+        ],
+        "severity_stable": true,
+        "mrs_range": 0.0
+      },
+      "latency_seconds": 0.0001,
+      "latency_passed": true,
+      "test_passed": true,
+      "failure_type": "NONE",
+      "warnings": []
+    },
+    {
+      "scenario": "extreme_valid_large_price",
+      "status": "PASS",
+      "expected_valid_schema": true,
+      "actual_valid_schema": true,
+      "expected_model_runs": true,
+      "actual_model_ran": true,
+      "schema_errors": [],
+      "decision": {
+        "mrs": 53.01,
+        "severity": "Defensive",
+        "action_bundle": "liquidity_rebalancing"
+      },
+      "decision_valid": true,
+      "decision_errors": [],
+      "behavioral_valid": true,
+      "behavioral_errors": [],
+      "stability": {
+        "runs": 5,
+        "severities": [
+          "Defensive",
+          "Defensive",
+          "Defensive",
+          "Defensive",
+          "Defensive"
+        ],
+        "severity_stable": true,
+        "mrs_range": 0.0
+      },
+      "latency_seconds": 0.0001,
+      "latency_passed": true,
+      "test_passed": true,
+      "failure_type": "NONE",
+      "warnings": []
+    },
+    {
+      "scenario": "extreme_valid_tiny_volume",
+      "status": "PASS",
+      "expected_valid_schema": true,
+      "actual_valid_schema": true,
+      "expected_model_runs": true,
+      "actual_model_ran": true,
+      "schema_errors": [],
+      "decision": {
+        "mrs": 0.39,
+        "severity": "Normal",
+        "action_bundle": "monitor_only"
+      },
+      "decision_valid": true,
+      "decision_errors": [],
+      "behavioral_valid": true,
+      "behavioral_errors": [],
+      "stability": {
+        "runs": 5,
+        "severities": [
+          "Normal",
+          "Normal",
+          "Normal",
+          "Normal",
+          "Normal"
+        ],
+        "severity_stable": true,
+        "mrs_range": 0.0
+      },
+      "latency_seconds": 0.0,
+      "latency_passed": true,
+      "test_passed": true,
+      "failure_type": "NONE",
+      "warnings": []
+    },
+    {
+      "scenario": "multi_event_sell_pressure_50_events",
+      "status": "PASS",
+      "expected_valid_schema": true,
+      "actual_valid_schema": true,
+      "expected_model_runs": true,
+      "actual_model_ran": true,
+      "schema_errors": [],
+      "decision": {
+        "mrs": 75,
+        "severity": "Critical",
+        "action_bundle": "liquidity_rebalancing"
+      },
+      "decision_valid": true,
+      "decision_errors": [],
+      "behavioral_valid": true,
+      "behavioral_errors": [],
+      "stability": {
+        "runs": 5,
+        "severities": [
+          "Critical",
+          "Critical",
+          "Critical",
+          "Critical",
+          "Critical"
+        ],
+        "severity_stable": true,
+        "mrs_range": 0.0
+      },
+      "latency_seconds": 0.0002,
+      "latency_passed": true,
+      "test_passed": true,
+      "failure_type": "NONE",
+      "warnings": []
+    },
+    {
+      "scenario": "conflicting_buy_sell_pressure",
+      "status": "PASS",
+      "expected_valid_schema": true,
+      "actual_valid_schema": true,
+      "expected_model_runs": true,
+      "actual_model_ran": true,
+      "schema_errors": [],
+      "decision": {
+        "mrs": 65,
+        "severity": "Defensive",
+        "action_bundle": "liquidity_rebalancing"
+      },
+      "decision_valid": true,
+      "decision_errors": [],
+      "behavioral_valid": true,
+      "behavioral_errors": [],
+      "stability": {
+        "runs": 5,
+        "severities": [
+          "Defensive",
+          "Defensive",
+          "Defensive",
+          "Defensive",
+          "Defensive"
+        ],
+        "severity_stable": true,
+        "mrs_range": 0.0
+      },
+      "latency_seconds": 0.0001,
+      "latency_passed": true,
+      "test_passed": true,
+      "failure_type": "NONE",
+      "warnings": []
+    },
+    {
+      "scenario": "missing_price",
+      "status": "PASS",
+      "expected_valid_schema": false,
+      "actual_valid_schema": false,
+      "expected_model_runs": false,
+      "actual_model_ran": false,
+      "schema_errors": [
+        "event[0] missing numeric field: price"
+      ],
+      "decision_valid": false,
+      "decision_errors": [],
+      "behavioral_valid": null,
+      "behavioral_errors": [],
+      "stability": null,
+      "latency_seconds": 0.0,
+      "test_passed": true,
+      "failure_type": "EXPECTED_REJECTION",
+      "warnings": []
+    },
+    {
+      "scenario": "negative_volume",
+      "status": "PASS",
+      "expected_valid_schema": false,
+      "actual_valid_schema": false,
+      "expected_model_runs": false,
+      "actual_model_ran": false,
+      "schema_errors": [
+        "event[0] invalid volume: -5.0"
+      ],
+      "decision_valid": false,
+      "decision_errors": [],
+      "behavioral_valid": null,
+      "behavioral_errors": [],
+      "stability": null,
+      "latency_seconds": 0.0,
+      "test_passed": true,
+      "failure_type": "EXPECTED_REJECTION",
+      "warnings": []
+    },
+    {
+      "scenario": "bid_above_ask",
+      "status": "PASS",
+      "expected_valid_schema": false,
+      "actual_valid_schema": false,
+      "expected_model_runs": false,
+      "actual_model_ran": false,
+      "schema_errors": [
+        "event[0] bid must be lower than ask"
+      ],
+      "decision_valid": false,
+      "decision_errors": [],
+      "behavioral_valid": null,
+      "behavioral_errors": [],
+      "stability": null,
+      "latency_seconds": 0.0,
+      "test_passed": true,
+      "failure_type": "EXPECTED_REJECTION",
+      "warnings": []
+    },
+    {
+      "scenario": "invalid_side",
+      "status": "PASS",
+      "expected_valid_schema": false,
+      "actual_valid_schema": false,
+      "expected_model_runs": false,
+      "actual_model_ran": false,
+      "schema_errors": [
+        "event[0] invalid side: hold"
+      ],
+      "decision_valid": false,
+      "decision_errors": [],
+      "behavioral_valid": null,
+      "behavioral_errors": [],
+      "stability": null,
+      "latency_seconds": 0.0,
+      "test_passed": true,
+      "failure_type": "EXPECTED_REJECTION",
+      "warnings": []
+    },
+    {
+      "scenario": "duplicate_event_ids",
+      "status": "PASS",
+      "expected_valid_schema": false,
+      "actual_valid_schema": false,
+      "expected_model_runs": false,
+      "actual_model_ran": false,
+      "schema_errors": [
+        "duplicate event_id: dup_001"
+      ],
+      "decision_valid": false,
+      "decision_errors": [],
+      "behavioral_valid": null,
+      "behavioral_errors": [],
+      "stability": null,
+      "latency_seconds": 0.0,
+      "test_passed": true,
+      "failure_type": "EXPECTED_REJECTION",
+      "warnings": []
+    },
+    {
+      "scenario": "out_of_order_timestamps",
+      "status": "PASS",
+      "expected_valid_schema": false,
+      "actual_valid_schema": false,
+      "expected_model_runs": false,
+      "actual_model_ran": false,
+      "schema_errors": [
+        "timestamps are out of order"
+      ],
+      "decision_valid": false,
+      "decision_errors": [],
+      "behavioral_valid": null,
+      "behavioral_errors": [],
+      "stability": null,
+      "latency_seconds": 0.0,
+      "test_passed": true,
+      "failure_type": "EXPECTED_REJECTION",
+      "warnings": []
+    },
+    {
+      "scenario": "overflow_price_rejected",
+      "status": "PASS",
+      "expected_valid_schema": false,
+      "actual_valid_schema": false,
+      "expected_model_runs": false,
+      "actual_model_ran": false,
+      "schema_errors": [
+        "event[0] invalid price: inf",
+        "event[0] invalid bid: nan",
+        "event[0] invalid ask: inf"
+      ],
+      "decision_valid": false,
+      "decision_errors": [],
+      "behavioral_valid": null,
+      "behavioral_errors": [],
+      "stability": null,
+      "latency_seconds": 0.0,
+      "test_passed": true,
+      "failure_type": "EXPECTED_REJECTION",
+      "warnings": []
+    }
+  ]
+}

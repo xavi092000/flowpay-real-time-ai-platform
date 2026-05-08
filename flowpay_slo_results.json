@@ -1,0 +1,42 @@
+{
+  "summary": {
+    "total_tests": 2,
+    "passed_tests": 2,
+    "success_rate": 1.0,
+    "success_rate_target": 0.95,
+    "success_rate_slo_passed": true,
+    "average_latency_seconds": 2.2925,
+    "p95_latency_seconds": 2.7268,
+    "p95_latency_target_seconds": 5.0,
+    "p95_latency_slo_passed": true,
+    "overall_slo_passed": true
+  },
+  "results": [
+    {
+      "scenario": "normal_market",
+      "expected_severity": "Normal",
+      "actual_severity": "Normal",
+      "status": "SUCCEEDED",
+      "mrs": 0.1,
+      "action_bundle": "monitoring_bundle",
+      "latency_seconds": 2.7268,
+      "slo_latency_target_seconds": 5.0,
+      "slo_latency_passed": true,
+      "quality_score": 1.0,
+      "test_passed": true
+    },
+    {
+      "scenario": "guarded_sell_pressure",
+      "expected_severity": "Guarded",
+      "actual_severity": "Guarded",
+      "status": "SUCCEEDED",
+      "mrs": 44.05,
+      "action_bundle": "early_warning_bundle",
+      "latency_seconds": 1.8582,
+      "slo_latency_target_seconds": 5.0,
+      "slo_latency_passed": true,
+      "quality_score": 1.0,
+      "test_passed": true
+    }
+  ]
+}

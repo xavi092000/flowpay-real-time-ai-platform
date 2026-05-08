@@ -1,0 +1,97 @@
+[
+
+  {
+    "timestamp": "2026-04-24T10:00:01Z",
+    "symbol": "BTC-USD",
+    "side": "buy",
+    "price": 67000,
+    "volume": 1.0,
+    "bid": 66995,
+    "ask": 67005,
+    "bid_depth": 1000000,
+    "ask_depth": 1005000
+  },
+  {
+    "timestamp": "2026-04-24T10:00:15Z",
+    "symbol": "BTC-USD",
+    "side": "sell",
+    "price": 67002,
+    "volume": 1.1,
+    "bid": 66997,
+    "ask": 67007,
+    "bid_depth": 1002000,
+    "ask_depth": 1003000
+  },
+
+
+  {
+    "timestamp": "2026-04-24T10:00:40Z",
+    "symbol": "BTC-USD",
+    "side": "sell",
+    "price": 66980,
+    "volume": 2.8,
+    "bid": 66960,
+    "ask": 67000,
+    "bid_depth": 900000,
+    "ask_depth": 1000000
+  },
+  {
+    "timestamp": "2026-04-24T10:00:55Z",
+    "symbol": "BTC-USD",
+    "side": "sell",
+    "price": 66940,
+    "volume": 3.2,
+    "bid": 66920,
+    "ask": 66970,
+    "bid_depth": 820000,
+    "ask_depth": 970000
+  },
+
+
+  {
+    "timestamp": "2026-04-24T10:01:20Z",
+    "symbol": "BTC-USD",
+    "side": "sell",
+    "price": 66800,
+    "volume": 4.5,
+    "bid": 66750,
+    "ask": 66850,
+    "bid_depth": 600000,
+    "ask_depth": 900000
+  },
+  {
+    "timestamp": "2026-04-24T10:01:35Z",
+    "symbol": "BTC-USD",
+    "side": "sell",
+    "price": 66650,
+    "volume": 5.0,
+    "bid": 66580,
+    "ask": 66720,
+    "bid_depth": 400000,
+    "ask_depth": 800000
+  },
+
+
+  {
+    "timestamp": "2026-04-24T10:02:00Z",
+    "symbol": "BTC-USD",
+    "side": "sell",
+    "price": 66000,
+    "volume": 7.5,
+    "bid": 65800,
+    "ask": 66200,
+    "bid_depth": 200000,
+    "ask_depth": 700000
+  },
+  {
+    "timestamp": "2026-04-24T10:02:15Z",
+    "symbol": "BTC-USD",
+    "side": "sell",
+    "price": 65200,
+    "volume": 9.0,
+    "bid": 65000,
+    "ask": 65500,
+    "bid_depth": 120000,
+    "ask_depth": 600000
+  }
+]

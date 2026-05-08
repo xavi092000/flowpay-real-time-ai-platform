@@ -1,0 +1,19 @@
+{
+  "results": [
+    {
+      "scenario": "normal_market",
+      "expected_severity": "Normal",
+      "actual_severity": "Normal",
+      "status": "SUCCEEDED",
+      "test_passed": true
+    },
+    {
+      "scenario": "guarded_sell_pressure",
+      "expected_severity": "Guarded",
+      "actual_severity": "Guarded",
+      "status": "SUCCEEDED",
+      "test_passed": true
+    }
+  ],
+  "success_rate": 1.0
+}

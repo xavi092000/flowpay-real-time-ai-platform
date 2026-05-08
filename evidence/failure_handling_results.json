@@ -1,0 +1,191 @@
+{
+  "summary": {
+    "section": "failure_handling",
+    "total_tests": 10,
+    "passed_tests": 10,
+    "pass_rate": 1.0,
+    "minimum_required_tests": 10,
+    "minimum_tests_passed": true,
+    "target_pass_rate": 0.9,
+    "target_pass_rate_passed": true
+  },
+  "results": [
+    {
+      "test_name": "failure_valid_normal_event",
+      "expected_blocked_before_execution": false,
+      "actual_blocked_before_execution": false,
+      "step_functions_called": "NOT_CALLED_IN_FAILURE_TEST",
+      "quality_score": 1.0,
+      "errors": [],
+      "failure_type": "NONE",
+      "test_passed": true
+    },
+    {
+      "test_name": "failure_missing_event_id",
+      "expected_blocked_before_execution": true,
+      "actual_blocked_before_execution": true,
+      "step_functions_called": false,
+      "quality_score": 0.0,
+      "errors": [
+        {
+          "is_valid": false,
+          "errors": [
+            "Missing required field: event_id"
+          ],
+          "event_id": "UNKNOWN"
+        }
+      ],
+      "failure_type": "DATA_QUALITY_BLOCK",
+      "test_passed": true
+    },
+    {
+      "test_name": "failure_missing_timestamp",
+      "expected_blocked_before_execution": true,
+      "actual_blocked_before_execution": true,
+      "step_functions_called": false,
+      "quality_score": 0.0,
+      "errors": [
+        {
+          "is_valid": false,
+          "errors": [
+            "Missing required field: timestamp"
+          ],
+          "event_id": "dq_003"
+        }
+      ],
+      "failure_type": "DATA_QUALITY_BLOCK",
+      "test_passed": true
+    },
+    {
+      "test_name": "failure_invalid_side",
+      "expected_blocked_before_execution": true,
+      "actual_blocked_before_execution": true,
+      "step_functions_called": false,
+      "quality_score": 0.0,
+      "errors": [
+        {
+          "is_valid": false,
+          "errors": [
+            "Invalid side: hold"
+          ],
+          "event_id": "dq_004"
+        }
+      ],
+      "failure_type": "DATA_QUALITY_BLOCK",
+      "test_passed": true
+    },
+    {
+      "test_name": "failure_negative_price",
+      "expected_blocked_before_execution": true,
+      "actual_blocked_before_execution": true,
+      "step_functions_called": false,
+      "quality_score": 0.0,
+      "errors": [
+        {
+          "is_valid": false,
+          "errors": [
+            "Invalid price: -1"
+          ],
+          "event_id": "dq_005"
+        }
+      ],
+      "failure_type": "DATA_QUALITY_BLOCK",
+      "test_passed": true
+    },
+    {
+      "test_name": "failure_zero_volume",
+      "expected_blocked_before_execution": true,
+      "actual_blocked_before_execution": true,
+      "step_functions_called": false,
+      "quality_score": 0.0,
+      "errors": [
+        {
+          "is_valid": false,
+          "errors": [
+            "Invalid volume: 0"
+          ],
+          "event_id": "dq_006"
+        }
+      ],
+      "failure_type": "DATA_QUALITY_BLOCK",
+      "test_passed": true
+    },
+    {
+      "test_name": "failure_bid_greater_than_ask",
+      "expected_blocked_before_execution": true,
+      "actual_blocked_before_execution": true,
+      "step_functions_called": false,
+      "quality_score": 0.0,
+      "errors": [
+        {
+          "is_valid": false,
+          "errors": [
+            "Invalid market spread: bid 67020 must be lower than ask 67010"
+          ],
+          "event_id": "dq_007"
+        }
+      ],
+      "failure_type": "DATA_QUALITY_BLOCK",
+      "test_passed": true
+    },
+    {
+      "test_name": "failure_negative_bid_depth",
+      "expected_blocked_before_execution": true,
+      "actual_blocked_before_execution": true,
+      "step_functions_called": false,
+      "quality_score": 0.0,
+      "errors": [
+        {
+          "is_valid": false,
+          "errors": [
+            "Invalid bid_depth: -1"
+          ],
+          "event_id": "dq_008"
+        }
+      ],
+      "failure_type": "DATA_QUALITY_BLOCK",
+      "test_passed": true
+    },
+    {
+      "test_name": "failure_zero_ask_depth",
+      "expected_blocked_before_execution": true,
+      "actual_blocked_before_execution": true,
+      "step_functions_called": false,
+      "quality_score": 0.0,
+      "errors": [
+        {
+          "is_valid": false,
+          "errors": [
+            "Invalid ask_depth: 0"
+          ],
+          "event_id": "dq_009"
+        }
+      ],
+      "failure_type": "DATA_QUALITY_BLOCK",
+      "test_passed": true
+    },
+    {
+      "test_name": "failure_multiple_invalid_fields",
+      "expected_blocked_before_execution": true,
+      "actual_blocked_before_execution": true,
+      "step_functions_called": false,
+      "quality_score": 0.0,
+      "errors": [
+        {
+          "is_valid": false,
+          "errors": [
+            "Invalid side: bad",
+            "Invalid price: -100",
+            "Invalid volume: 0",
+            "Invalid market spread: bid 67010 must be lower than ask 66990",
+            "Invalid bid_depth: -5",
+            "Invalid ask_depth: 0"
+          ],
+          "event_id": "dq_010"
+        }
+      ],
+      "failure_type": "DATA_QUALITY_BLOCK",
+      "test_passed": true
+    }
+  ]
+}

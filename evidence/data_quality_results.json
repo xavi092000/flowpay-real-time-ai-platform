@@ -1,0 +1,181 @@
+{
+  "summary": {
+    "section": "data_quality",
+    "total_tests": 10,
+    "passed_tests": 10,
+    "pass_rate": 1.0,
+    "minimum_required_tests": 10,
+    "minimum_tests_passed": true,
+    "target_pass_rate": 0.9,
+    "target_pass_rate_passed": true
+  },
+  "results": [
+    {
+      "test_name": "valid_normal_event",
+      "expected_data_quality_passed": true,
+      "actual_data_quality_passed": true,
+      "quality_score": 1.0,
+      "invalid_events": 0,
+      "errors": [],
+      "test_passed": true
+    },
+    {
+      "test_name": "missing_event_id",
+      "expected_data_quality_passed": false,
+      "actual_data_quality_passed": false,
+      "quality_score": 0.0,
+      "invalid_events": 1,
+      "errors": [
+        {
+          "is_valid": false,
+          "errors": [
+            "Missing required field: event_id"
+          ],
+          "event_id": "UNKNOWN"
+        }
+      ],
+      "test_passed": true
+    },
+    {
+      "test_name": "missing_timestamp",
+      "expected_data_quality_passed": false,
+      "actual_data_quality_passed": false,
+      "quality_score": 0.0,
+      "invalid_events": 1,
+      "errors": [
+        {
+          "is_valid": false,
+          "errors": [
+            "Missing required field: timestamp"
+          ],
+          "event_id": "dq_003"
+        }
+      ],
+      "test_passed": true
+    },
+    {
+      "test_name": "invalid_side",
+      "expected_data_quality_passed": false,
+      "actual_data_quality_passed": false,
+      "quality_score": 0.0,
+      "invalid_events": 1,
+      "errors": [
+        {
+          "is_valid": false,
+          "errors": [
+            "Invalid side: hold"
+          ],
+          "event_id": "dq_004"
+        }
+      ],
+      "test_passed": true
+    },
+    {
+      "test_name": "negative_price",
+      "expected_data_quality_passed": false,
+      "actual_data_quality_passed": false,
+      "quality_score": 0.0,
+      "invalid_events": 1,
+      "errors": [
+        {
+          "is_valid": false,
+          "errors": [
+            "Invalid price: -1"
+          ],
+          "event_id": "dq_005"
+        }
+      ],
+      "test_passed": true
+    },
+    {
+      "test_name": "zero_volume",
+      "expected_data_quality_passed": false,
+      "actual_data_quality_passed": false,
+      "quality_score": 0.0,
+      "invalid_events": 1,
+      "errors": [
+        {
+          "is_valid": false,
+          "errors": [
+            "Invalid volume: 0"
+          ],
+          "event_id": "dq_006"
+        }
+      ],
+      "test_passed": true
+    },
+    {
+      "test_name": "bid_greater_than_ask",
+      "expected_data_quality_passed": false,
+      "actual_data_quality_passed": false,
+      "quality_score": 0.0,
+      "invalid_events": 1,
+      "errors": [
+        {
+          "is_valid": false,
+          "errors": [
+            "Invalid market spread: bid 67020 must be lower than ask 67010"
+          ],
+          "event_id": "dq_007"
+        }
+      ],
+      "test_passed": true
+    },
+    {
+      "test_name": "negative_bid_depth",
+      "expected_data_quality_passed": false,
+      "actual_data_quality_passed": false,
+      "quality_score": 0.0,
+      "invalid_events": 1,
+      "errors": [
+        {
+          "is_valid": false,
+          "errors": [
+            "Invalid bid_depth: -1"
+          ],
+          "event_id": "dq_008"
+        }
+      ],
+      "test_passed": true
+    },
+    {
+      "test_name": "zero_ask_depth",
+      "expected_data_quality_passed": false,
+      "actual_data_quality_passed": false,
+      "quality_score": 0.0,
+      "invalid_events": 1,
+      "errors": [
+        {
+          "is_valid": false,
+          "errors": [
+            "Invalid ask_depth: 0"
+          ],
+          "event_id": "dq_009"
+        }
+      ],
+      "test_passed": true
+    },
+    {
+      "test_name": "multiple_invalid_fields",
+      "expected_data_quality_passed": false,
+      "actual_data_quality_passed": false,
+      "quality_score": 0.0,
+      "invalid_events": 1,
+      "errors": [
+        {
+          "is_valid": false,
+          "errors": [
+            "Invalid side: bad",
+            "Invalid price: -100",
+            "Invalid volume: 0",
+            "Invalid market spread: bid 67010 must be lower than ask 66990",
+            "Invalid bid_depth: -5",
+            "Invalid ask_depth: 0"
+          ],
+          "event_id": "dq_010"
+        }
+      ],
+      "test_passed": true
+    }
+  ]
+}
