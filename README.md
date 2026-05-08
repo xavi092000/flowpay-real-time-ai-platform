@@ -129,15 +129,18 @@ FlowPay includes a full validation and reliability framework:
 
 ---
 
-Observability & Reliability
+## Observability & Reliability
+
+- CloudWatch metrics publishing
+- Validation evidence generation
+- Failure replay systems
+- Adversarial scenario testing
+- Decision quality evaluation
+- Reliability-oriented architecture
+
+---
 
 
-CloudWatch metrics publishing
-Validation evidence generation
-Failure replay systems
-Adversarial scenario testing
-Decision quality evaluation
-Reliability-oriented architecture
 Infrastructure as Code
 
 Infrastructure deployment is managed using Terraform.
