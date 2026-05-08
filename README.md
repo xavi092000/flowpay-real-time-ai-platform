@@ -140,42 +140,52 @@ FlowPay includes a full validation and reliability framework:
 
 ---
 
-
-Infrastructure as Code
+## Infrastructure as Code
 
 Infrastructure deployment is managed using Terraform.
 
 Infrastructure components include:
 
-Kinesis Data Streams
-Lambda deployment
-CloudWatch metrics
-IAM policies
-S3 storage
-Athena integration
-Analytics Engineering
+- Kinesis Data Streams
+- Lambda deployment
+- CloudWatch metrics
+- IAM policies
+- S3 storage
+- Athena integration
+
+---
+
+## Analytics Engineering
 
 FlowPay includes a dbt analytics layer with:
 
-models
-tests
-snapshots
-macros
-lineage-ready transformations
-Why This Project Matters
+- models
+- tests
+- snapshots
+- macros
+- lineage-ready transformations
+
+---
+
+## Why This Project Matters
 
 FlowPay demonstrates the intersection of:
 
-AI Engineering
-Cloud Data Engineering
-Reliability Engineering
-Streaming Architectures
-LLMOps
-Observability
-Decision Intelligence Systems
-Evidence & Validation
+- AI Engineering
+- Cloud Data Engineering
+- Reliability Engineering
+- Streaming Architectures
+- LLMOps
+- Observability
+- Decision Intelligence Systems
 
-Validation evidence and evaluation summaries are available in the /evidence directory.
+---
+
+## Evidence & Validation
+
+Validation evidence and evaluation summaries are available in the `/evidence` directory.
+
+---
 
 ## Project Structure
 
@@ -197,9 +207,3 @@ flowpay-real-time-ai-platform/
 ├── flowpay_observability.py
 │
 └── README.md
-
-
-Author
-
-Felix Brillant
-AI / Cloud Data Engineering
