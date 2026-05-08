@@ -175,6 +175,28 @@ Evidence & Validation
 
 Validation evidence and evaluation summaries are available in the /evidence directory.
 
+## Project Structure
+
+```text
+flowpay-real-time-ai-platform/
+│
+├── architecture/        # System architecture diagrams
+├── data/                # Replay and validation datasets
+├── docs/                # Documentation and README versions
+├── evidence/            # Validation evidence and reports
+├── flowpay_dbt/         # dbt analytics engineering layer
+├── infra/               # Terraform infrastructure
+├── screenshots/         # Dashboard and architecture screenshots
+│
+├── flowpay_quant_engine.py
+├── flowpay_decision_agents.py
+├── flowpay_validation_runner.py
+├── flowpay_rag_with_quant.py
+├── flowpay_observability.py
+│
+└── README.md
+
+
 Author
 
 Felix Brillant
