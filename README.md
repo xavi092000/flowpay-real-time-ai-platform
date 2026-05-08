@@ -76,25 +76,18 @@ CloudWatch Metrics + Validation Evidence
 ```
 
 
-AWS Cloud Stack
-Amazon Kinesis Data Streams
-AWS Lambda
-AWS Step Functions
-Amazon S3
-Amazon Athena
-AWS Glue Catalog
-Amazon CloudWatch
-Terraform Infrastructure as Code
-AI Engineering Components
-Quantitative risk engine
-Multi-agent orchestration
-Retrieval-Augmented Generation (RAG)
-Vector database retrieval (Qdrant)
-Hallucination mitigation
-Retrieval confidence scoring
-AI evaluation layer
-Controlled explanation generation
-Production-Grade Validation
+## AWS Cloud Stack
+
+- Amazon Kinesis Data Streams
+- AWS Lambda
+- AWS Step Functions
+- Amazon S3
+- Amazon Athena
+- AWS Glue Catalog
+- Amazon CloudWatch
+- Terraform Infrastructure as Code
+
+---
 
 FlowPay includes a full validation and reliability framework:
 
