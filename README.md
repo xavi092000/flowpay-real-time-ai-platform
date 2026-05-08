@@ -242,9 +242,21 @@ FlowPay includes a dbt analytics layer with:
 - dbt-based analytics validation
 
 ---
+## Key Engineering Achievements
 
+- Built a production-style event-driven AI financial intelligence pipeline
+- Implemented real-time streaming ingestion with Amazon Kinesis
+- Designed multi-agent orchestration using AWS Step Functions
+- Engineered a quantitative Market Risk Score (MRS) engine
+- Developed Retrieval-Augmented Generation (RAG) explanation workflows
+- Implemented adversarial replay validation and reliability testing
+- Created observability and SLO monitoring workflows with CloudWatch
+- Built analytics engineering models using dbt
+- Implemented Infrastructure as Code (IaC) using Terraform
+- Produced recruiter-grade validation evidence and performance reporting
 
 ## Why This Project Matters
+
 
 FlowPay demonstrates the intersection of:
 
