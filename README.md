@@ -249,6 +249,34 @@ flowpay-real-time-ai-platform/
 │
 └── README.md
 
+## Local Execution
+
+Run the complete FlowPay demonstration:
+
+```bash
+python flowpay_full_demo.py
+```
+
+Run the global validation pipeline:
+
+```bash
+python flowpay_validation_runner.py
+```
+
+Run adversarial replay testing:
+
+```bash
+python flowpay_adversarial_event_replay.py
+```
+
+Run streaming replay validation:
+
+```bash
+python flowpay_30s_event_replay_validation.py
+```
+
+---
+
 Author
 
 Felix Brillant
