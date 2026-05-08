@@ -118,8 +118,6 @@ FlowPay includes a full validation and reliability framework:
 
 ---
 
-
-
 ## Performance Metrics
 
 | Metric | Result |
@@ -129,6 +127,7 @@ FlowPay includes a full validation and reliability framework:
 | SLO Target (<5s) | PASSED |
 | Infrastructure Failures | 0 |
 
+---
 
 Observability & Reliability
 
