@@ -1,3 +1,13 @@
+![AWS](https://img.shields.io/badge/AWS-Cloud-orange?style=for-the-badge&logo=amazonaws)
+![Python](https://img.shields.io/badge/Python-Engineering-blue?style=for-the-badge&logo=python)
+![Terraform](https://img.shields.io/badge/Terraform-IaC-623CE4?style=for-the-badge&logo=terraform)
+![dbt](https://img.shields.io/badge/dbt-Analytics-FF694B?style=for-the-badge&logo=dbt)
+![Power BI](https://img.shields.io/badge/PowerBI-Dashboard-F2C811?style=for-the-badge&logo=powerbi)
+![RAG](https://img.shields.io/badge/AI-RAG-green?style=for-the-badge)
+![Validation](https://img.shields.io/badge/Validation-100%25_PASS-success?style=for-the-badge)
+
+
+
 # FlowPay — Real-Time Cloud AI Financial Intelligence Platform
 
 ## Executive Summary
@@ -26,6 +36,8 @@ The platform combines streaming ingestion, quantitative modeling, cloud orchestr
 ---
 
 ## High-Level Architecture
+
+[View Full Architecture Diagram](architecture/flowpay_architecture.md)
 
 ```text
 Market Events
